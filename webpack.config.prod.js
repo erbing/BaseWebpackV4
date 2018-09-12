@@ -7,7 +7,8 @@ const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 let webpackConfig = {
     entry: {
-        app: './app.js'
+        app: './app.js',
+        jq: './jq.js'
     },
     output: {
         filename: '[name].js',
@@ -55,6 +56,14 @@ let webpackConfig = {
             template: path.join(__dirname, './index.html'),
         })
     ],
+
+    optimization: {
+        splitChunks: {
+            chunks: 'async',
+            name: true
+        }
+    },
+
     mode: 'production'
 }
 
