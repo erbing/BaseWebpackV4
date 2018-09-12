@@ -1,8 +1,9 @@
 const webpack = require('webpack')
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const OpenBrowserPlugin = require('open-browser-webpack-plugin')
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+
+const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 let webpackConfig = {
     entry: {
@@ -48,6 +49,7 @@ let webpackConfig = {
         ]
     },
     plugins: [
+        new CleanWebpackPlugin(['dist']),
         new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({
             template: path.join(__dirname, './index.html'),
