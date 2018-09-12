@@ -53,13 +53,6 @@ let webpackConfig = {
             template: path.join(__dirname, './index.html'),
         })
     ],
-    // devServer: {
-    //     historyApiFallback: true,
-    //     hot: true,
-    //     open: true,
-    //     host: '127.0.0.1',
-    //     port: '8088'
-    // },
     mode: 'production'
 }
 
