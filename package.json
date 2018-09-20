@@ -51,6 +51,7 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.2.0",
     "require": "^2.4.20",
+    "requirejs": "^2.3.6",
     "style-loader": "^0.21.0",
     "transform-runtime": "^0.0.0",
     "upng-js": "^2.1.0",

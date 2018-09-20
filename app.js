@@ -1,6 +1,9 @@
 import React from "react";
 import ReactDom from "react-dom";
 import { BrowserRouter } from "react-router-dom";
+
+import RequireDemo from "./require/index";
+
 const common = require("./module/index");
 const common1 = require("./module/demo");
 const common2 = require("./module/index1");
@@ -21,7 +24,8 @@ console.log(x1, "export2"); // ƒ fn() {return window.location.href;} "export2"
 
 const APP = () => (
   <div className="app">
-    <h3>Hello, World</h3>
+    <h3>test for demo</h3>
+    <RequireDemo />
   </div>
 );
 
