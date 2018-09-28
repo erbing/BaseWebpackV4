@@ -17,11 +17,11 @@ const fn = () => {
   };
 };
 
-const resFn = babelArrawFunc(fn);
+// const resFn = babelArrawFunc(fn);
 
 // const res = babel.transform(optionsObject);
 console.log(babel, "-----babel------");
-console.log(resFn, "-----babelArrawFunc------");
+console.log(babelArrawFunc, "-----babelArrawFunc------");
 
 const Requires = () => (
   <div>
