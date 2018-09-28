@@ -1,7 +1,27 @@
 import React from "react";
 // var requirejs = require("requirejs");
+const babel = require("@babel/core");
+import babelArrawFunc from "@babel/plugin-transform-arrow-functions";
 
-console.log(global, "-----global------");
+const optionsObject = {
+  name: "zhang",
+  getName() {
+    console.log(this.name);
+  }
+};
+
+const fn = () => {
+  let a = 123;
+  const getName = () => {
+    console.log(this.name);
+  };
+};
+
+const resFn = babelArrawFunc(fn);
+
+// const res = babel.transform(optionsObject);
+console.log(babel, "-----babel------");
+console.log(resFn, "-----babelArrawFunc------");
 
 const Requires = () => (
   <div>
