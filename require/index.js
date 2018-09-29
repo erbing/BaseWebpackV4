@@ -18,8 +18,8 @@ const fn = () => {
 };
 
 // const resFn = babelArrawFunc(fn);
-
 // const res = babel.transform(optionsObject);
+
 console.log(babel, "-----babel------");
 console.log(babelArrawFunc, "-----babelArrawFunc------");
 
