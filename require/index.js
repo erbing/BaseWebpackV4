@@ -25,7 +25,7 @@ console.log(babelArrawFunc, "-----babelArrawFunc------");
 
 const Requires = () => (
   <div>
-    <div>1233s</div>
+    <div>1233ss</div>
   </div>
 );
 
