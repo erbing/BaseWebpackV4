@@ -5,8 +5,8 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 let webpackConfig = {
   entry: {
-    app: "./app.js"
-    // jq: './jq.js'
+    app: "./app.js",
+    jq: "./jq.js"
   },
   output: {
     filename: "[name].js",
